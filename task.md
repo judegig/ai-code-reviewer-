@@ -35,7 +35,8 @@
 ### Day 7 — Polish and deploy
 - [x] Write `test_full_pipeline.py` — fetches real diff from PR #1, runs all 4 agents, posts formatted Markdown comment to GitHub
 - [x] Test the full end-to-end flow on a real PR and confirm comment appears on GitHub
-- [ ] Deploy to Render so the server runs 24/7 and not just on your laptop
-- [ ] Point the GitHub webhook to the live Render URL
+- [x] Deploy to Render so the server runs 24/7 and not just on your laptop
+- [x] Point the GitHub webhook to the live Render URL
 - [ ] Write a README explaining what the project does
+
 
