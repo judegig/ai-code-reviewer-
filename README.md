@@ -17,7 +17,8 @@ An automated, real-time AI code review assistant. When code changes are submitte
   * **Logic Agent**: Looks for bugs, off-by-one errors, infinite loops, and edge case failures.
   * **Tests Agent**: Checks test coverage for new additions.
 * **Concurrent Execution**: Orchestrated using Python’s native `asyncio.gather`, executing all 4 LLM requests in parallel to reduce processing latency by over 70%.
-* **Smart Coordination**: An central coordinator deduplicates overlapping findings, ranks them by severity, and groups them by file.
+* **Smart Coordination**: A central coordinator deduplicates overlapping findings, ranks them by severity, and groups them by exact file paths to ensure clean, readable reports.
+* **Pinpoint Accuracy**: Agents are strictly constrained to only report issues on modified lines, eliminating false positives from surrounding context code.
 * **Resilient Parsing**: Custom regex-based sanitization parsing automatically extracts and formats JSON responses even when LLMs output surrounding text.
 * **Real-time Automation**: Connected to GitHub Webhooks to run automatically whenever a PR is created or updated.
 
