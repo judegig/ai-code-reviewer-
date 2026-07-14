@@ -37,6 +37,7 @@
 - [x] Test the full end-to-end flow on a real PR and confirm comment appears on GitHub
 - [x] Deploy to Render so the server runs 24/7 and not just on your laptop
 - [x] Point the GitHub webhook to the live Render URL
-- [ ] Write a README explaining what the project does
+- [x] Write a README explaining what the project does
+
 
 
