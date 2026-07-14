@@ -15,7 +15,6 @@
 - [x] Tested `github_client.py` — successfully fetched real diff from GitHub PR #1
 - [x] Created `agents/linter.py` — sends diff to Groq AI and gets back a list of code issues
 - [x] Tested linter agent — Groq correctly caught the hardcoded password as high severity
-- [x] Added `post_pr_comment` function to `github_client.py` — posts a comment to a GitHub PR using the API
 - [x] Tested posting a real comment on PR #1 — comment appeared successfully on GitHub
 
 ### Day 5 — Build 3 more agents + run all 4 in parallel
