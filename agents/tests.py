@@ -19,9 +19,12 @@ TESTS_PROMPT = """You are a test coverage reviewer. Given a code diff, check whe
 Return JSON only, no extra text:
 {
   "issues": [
-    {"file": "filename here", "line": 1, "severity": "low|medium|high", "message": "describe the issue here"}
+    {"file": "exact/path/to/filename.py", "line": 1, "severity": "low|medium|high", "message": "describe the issue here"}
   ]
 }
+
+IMPORTANT: For the "file" field, you MUST use the exact filename provided in the "--- filename ---" header. Do not truncate or remove the directory path (e.g. use "showcase/admin.py" instead of just "admin.py").
+
 
 If there are no issues, return: {"issues": []}
 
