@@ -31,8 +31,8 @@ def parse_patch_to_numbered_lines(patch: str) -> str:
             result.append(f"Line {new_line_num}: {line}")
             new_line_num += 1
         elif line.startswith("-"):
-            # Deleted line has no line number in the new file
-            result.append(f"Deleted: {line}")
+            # Skip deleted lines entirely so the AI doesn't review or get confused by removed code/secrets
+            continue
         else:
             # Context line (starts with space or empty)
             result.append(f"Line {new_line_num}: {line}")
