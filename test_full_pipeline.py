@@ -3,7 +3,7 @@ from main import review_pr
 
 # Info about the test PR on your GitHub repository
 pr_info = {
-    "repo": "judegig/ai-code-reviewer-",
+    "repo": "judegig/jude-portfolio",
     "pr_number": 1,
     "sha": ""
 }
