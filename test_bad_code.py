@@ -1,7 +1,7 @@
-from bad_code import do_complex_math
-
-def test_do_complex_math_normal():
-    assert do_complex_math(10, 2) == 5.0
-
-def test_do_complex_math_zero():
-    assert do_complex_math(10, 0) == 0
+import pytest
+from bad_code import calculate_division
+def test_calculate_division_normal():
+    assert calculate_division(10, 2) == 5.0
+def test_calculate_division_zero():
+    with pytest.raises(ZeroDivisionError):
+        calculate_division(10, 0)
